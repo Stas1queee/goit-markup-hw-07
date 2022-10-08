@@ -51,6 +51,9 @@ img {
 a {
   text-decoration: none;
 }
+li {
+  list-style-type: none;
+}
 
 .container {
   width: 1200px;
@@ -71,14 +74,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-li {
-  list-style-type: none;
-}
+
 /* header styles */
-.site-nav a {
+.sitenav a {
   position: relative;
 }
-.current::after {
+.sitenav__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -90,28 +91,28 @@ li {
   border-radius: 2px;
 }
 
-.site-nav,
-.site-nav-list,
-.auth-nav {
+.sitenav,
+.sitenav__list,
+.authnav {
   display: flex;
   align-items: center;
 }
-.auth-nav svg {
+.authnav__iconenv {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.auth-nav .tel {
+
+.authnav__icontel {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
-.link :hover .env {
-  color: var(--accent-color);
-}
-.page-container {
+
+.page__container {
   display: flex;
 }
-.page .logo,
+.page .sitenav__logo,
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -123,14 +124,14 @@ li {
   border-bottom: 1px solid var(--border-color);
   background-color: var(--background-color-header);
 }
-.logo {
+.sitenav__logo {
   color: var(--secondary-text-color);
 }
-.logo-blue {
+.sitenav__logo--blue {
   color: var(--accent-color);
 }
-.site-nav a,
-.auth-nav a {
+.sitenav__link,
+.authnav__link {
   padding-bottom: 32px;
   padding-top: 32px;
   display: block;
@@ -142,32 +143,34 @@ li {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-.site-nav a {
+.sitenav__logo, .sitenav__link {
   color: var(--secondary-text-color);
 }
-.site-nav .logo {
+.sitenav__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.auth-nav {
+.authnav {
   margin-left: auto;
 }
-.auth-nav .item,
-.site-nav .item {
+.sitehnav__link--item,
+.authnav__link--item {
   margin-right: 0;
 }
-.auth-nav .link {
+.authnav__link {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
   fill: var(--fill-color);
 }
-.link.current {
+.sitenav__link--current {
   color: var(--accent-color);
 }
-.link:hover,
-.link:focus {
+.sitenav__link:hover,
+.sitenav__link:focus,
+.authnav__link:hover,
+.authnav__link:focus {
   cursor: pointer;
   color: var(--accent-color);
   fill: var(--accent-color);
