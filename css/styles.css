@@ -188,7 +188,7 @@ li {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/img-hero.jpg');
 }
-.hero-title {
+.hero__title {
   width: 696px;
   margin: 0 auto;
 
@@ -199,7 +199,7 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.btn {
+.hero__btn {
   border: none;
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
@@ -252,7 +252,7 @@ li {
   background-color: var(--background-color-header);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn {
+.modal__closebtn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -268,7 +268,7 @@ li {
   border-radius: 50%;
 }
 
-.close-btn:hover svg {
+.modal__closeicon:hover{
   fill: var(--accent-color);
 }
 
