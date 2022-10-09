@@ -274,7 +274,7 @@ li {
 
 /*  Form styles  */
 
-.modal-title {
+.modal__title {
   display: block;
   text-align: center;
   margin-bottom: 12px;
@@ -294,18 +294,18 @@ li {
   height: 342px;
 }
 
-.form-field {
+.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-field:last-child {
+.form__field:last-child {
   margin-bottom: 0;
 }
 
-.field-input {
+.field__input {
   position: relative;
   border: 0;
   height: 40px;
@@ -315,7 +315,7 @@ li {
   outline: none;
 }
 
-.text-area {
+.field__input--text{
   padding: 12px 16px;
   min-width: 448px;
   min-height: 120px;
@@ -323,7 +323,7 @@ li {
   resize: none;
 }
 
-.form-title {
+.form__title {
   text-align: left;
 
   margin-bottom: 4px;
@@ -335,7 +335,7 @@ li {
   color: var(--primary-text-color);
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   height: 18px;
   width: 18px;
@@ -344,7 +344,7 @@ li {
   fill: var(--secondary-text-color);
 }
 
-.field-input:focus + .form-icon {
+.field__input:focus + .form__icon {
   fill: var(--accent-color);
 }
 
@@ -359,19 +359,19 @@ li {
   color: var(--primary-text-color);
 }
 
-.checkbox {
+.agree__checkbox {
   appearance: none;
   position: absolute;
 }
 
-.agreement-link {
+.agree__link {
   margin-left: 5px;
 
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.checkbox-icon {
+.agree__icon {
   display: block;
   width: 16px;
   height: 15px;
@@ -381,12 +381,12 @@ li {
   margin-right: 8px;
 }
 
-.checkbox:checked + .checkbox-icon {
+.agree__checkbox:checked + .agree__icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.submit-btn {
+.agree__submitbtn {
   margin: 0 auto;
   min-width: 200px;
   min-height: 50px;
@@ -406,8 +406,8 @@ li {
   cursor: pointer;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.agree__submitbtn:hover,
+.agree__submitbtn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* main styles */
