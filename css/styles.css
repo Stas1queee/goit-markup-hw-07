@@ -76,7 +76,7 @@ li {
 }
 
 /* header styles */
-.sitenav a {
+.sitenav__link {
   position: relative;
 }
 .sitenav__link--current::after {
@@ -412,11 +412,11 @@ li {
 }
 /* main styles */
 
-.main-list {
+.mainlist {
   gap: 30px;
   display: flex;
 }
-.main-list div {
+.mainlist__box {
   background-color: var(--addinational-background-color);
   width: 270px;
   height: 120px;
@@ -425,23 +425,12 @@ li {
   justify-content: center;
   margin-bottom: 30px;
 }
-.main-list svg {
+.mainlist__icon {
   width: 70px;
   height: 70px;
 }
-.main-list li {
-  width: 270px;
-}
-/* .main-list li:not(:last-child){
-      margin-right: 30px;
-} */
-main .main {
-  background-color: var(--main-backgroud-color);
-}
-.list-title-list li {
-  background-color: var(--background-color-header);
-}
-.list-title {
+
+.mainlist__title {
   margin: auto;
   margin-bottom: 10px;
 
@@ -451,19 +440,27 @@ main .main {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.main-list .list-title {
+.mainlist__title {
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.12;
 }
+.mainlist__text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 
 /* What we do */
-.section-whatwedo {
+.whatwedo {
   padding-top: 0;
 }
-.card-title {
+.whatwedo__card-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.07px;
@@ -471,7 +468,7 @@ main .main {
 
   color: var(--background-color-header);
 }
-.card-element {
+.whatwedo__card-element {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,7 +481,7 @@ main .main {
 
   background-color: var(--background-elements);
 }
-.title {
+.whatwedo__title {
   margin-bottom: 50px;
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -492,31 +489,52 @@ main .main {
   line-height: 1.16;
   text-align: center;
 }
-.items {
+.whatwedo__items {
   display: flex;
   gap: 30px;
 }
-.item-photo {
+.whatwedo__photo {
   position: relative;
   width: 370px;
 }
-.portfolio .list-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
+
 /* Team section */
-.team-box {
+
+.ourteam__title {
+    margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team {
   background-color: var(--filters-color);
 }
-.list-title-list img {
+
+.team__title {
+    margin: auto;
+  margin-bottom: 10px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team__image {
   margin-bottom: 30px;
 }
-.list-title-list {
+.team__list  {
   display: flex;
   gap: 30px;
 }
-.list-title-list .social-links {
+.ourteam {
+  background-color: var(--filters-color);
+}
+.socials {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -524,28 +542,28 @@ main .main {
   height: 44px;
   margin-bottom: 30px;
 }
-.list-title-list svg {
+.team__list  svg {
   width: 20px;
   height: 20px;
   fill: var(--fill-color);
 }
-.social-link {
+.socials__link {
   display: block;
   height: 44px;
   border-radius: 50%;
   width: 100%;
   height: 100%;
 }
-.social-link:hover,
-.social-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   fill: var(--background-color-header);
 }
-.social-link:hover svg,
-.social-link:focus svg {
+.socials__link:hover svg,
+.socials__link:focus svg {
   fill: var(--background-color-header);
 }
-.social-links .social-link {
+.socials__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -553,7 +571,8 @@ main .main {
   justify-content: center;
 }
 
-.list-title-list .mate {
+.team__mate {
+  background-color:var(--background-color-header);
   text-align: center;
   width: 270px;
   /* shadows */
@@ -562,24 +581,13 @@ main .main {
   border-radius: 0px 0px 4px 4px;
 }
 
-.main-text {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.team-box .main-text {
+.team__text {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
 }
-.portfolio .main-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-}
+
 
 /* Clients */
 .clients-title {
@@ -654,6 +662,19 @@ main .main {
 
   background-color: var(--background-color-header);
 }
+
+.portfolio .list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio .mainlist__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
