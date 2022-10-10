@@ -74,6 +74,22 @@ li {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.no-scroll {
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 
 /* header styles */
 .sitenav__link {
@@ -112,8 +128,7 @@ li {
 .page__container {
   display: flex;
 }
-.page .sitenav__logo,
-.logo-footer {
+.sitenav__logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -697,7 +712,7 @@ li {
   overflow: hidden;
 }
 
-.port-card-text {
+.portfolio__coment {
   position: absolute;
   top: 0;
   left: 0;
@@ -715,8 +730,8 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__link:hover .port-card-text,
-.portfolio__link:focus .port-card-text {
+.portfolio__link:hover .portfolio__coment,
+.portfolio__link:focus .portfolio__coment {
   transform: translateY(0);
 }
 /* footer styles */
@@ -724,11 +739,11 @@ li {
   padding: 60px 0px;
   background-color: var(--dark-background-color);
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.our-socials {
+.oursocials {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -736,7 +751,7 @@ li {
 .thumb {
   margin-left: 70px;
 }
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.07;
@@ -744,56 +759,76 @@ li {
   text-transform: uppercase;
   color: var(--background-color-header);
 }
-.our-socials svg {
+.oursocials__icon {
   width: 44px;
   height: 44px;
   fill: var(--background-color-header);
 }
-.our-socials a {
+.oursocials__link {
   display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
-.our-socials a:hover,
-.our-socials a:focus {
+.oursocials__link:hover,
+.oursocials__link:focus {
   background-color: var(--accent-color);
 }
-.contacts-list {
+.contacts {
   margin-top: 20px;
 }
-.logo-footer {
+.footer__logo {
   text-decoration: none;
   color: var(--background-color-header);
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
-.contacts-list a {
+.footer__logo--blue {
+  color: var(--accent-color);
+}
+
+.contacts-link,
+.contacts__link--to {
   color: var(--background-color-header);
   text-decoration: none;
   font-style: normal;
 }
-.contacts-list li:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer .link-to {
+.contacts__link--to {
   color: var(--links-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-.footer .link {
+.contacts__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-color-header);
 }
-.footer .link-to:hover,
-.footer .link-to:focus {
+.contacts__link--to:hover,
+.contacts__link--to:focus,
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 
 /* subs-box styles */
 
-.subs-box {
+.subscration {
   display: block;
   margin-left: auto;
 
@@ -801,7 +836,7 @@ li {
   height: 86px;
 }
 
-.subs-title {
+.subscration__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -810,7 +845,7 @@ li {
   color: var(--background-color-header);
 }
 
-.subs-input {
+.subscration__input {
   margin-top: 20px;
   width: 358px;
   height: 50px;
@@ -822,7 +857,7 @@ li {
   outline: none;
 }
 
-.subs-btn {
+.subscration__btn {
   width: 200px;
   height: 50px;
 
@@ -847,24 +882,9 @@ li {
   letter-spacing: 0.06em;
 }
 
-.subs-icon {
+.subscration__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
