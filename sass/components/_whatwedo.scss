@@ -1,20 +1,17 @@
 .whatwedo {
   padding-top: 0;
-}
-.whatwedo__card-title {
+&__card-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.07px;
   text-transform: uppercase;
-
   color:$background-color-header;
 }
-.whatwedo__card-element {
+&__card-element {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-
   width: 370px;
   height: 70px;
   bottom: 0px;
@@ -22,7 +19,7 @@
 
   background-color:$background-elements;
 }
-.whatwedo__title {
+&__title {
   margin-bottom: 50px;
   color:$secondary-text-color;
   font-weight: 700;
@@ -30,11 +27,12 @@
   line-height: 1.16;
   text-align: center;
 }
-.whatwedo__items {
+&__items {
   display: flex;
   gap: 30px;
 }
-.whatwedo__photo {
+&__photo {
   position: relative;
   width: 370px;
+}
 }
