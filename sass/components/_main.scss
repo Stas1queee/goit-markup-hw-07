@@ -1,0 +1,35 @@
+.mainlist {
+  gap: 30px;
+  display: flex;
+}
+.mainlist__box {
+  background-color:$addinational-background-color;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.mainlist__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.mainlist__title {
+  margin: auto;
+  margin-bottom: 10px;
+
+  color:$secondary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.mainlist__text {
+  color:$primary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
